@@ -10,8 +10,9 @@ while(TRUE){
   sleep(3);
   $xmlout=$obj->getxml($stream[0]);
   if($xmlout) var_dump($xmlout);
+  include('logic.php');
   if($i>10) {
-    $obj->write_to_stream($stream[0], '<presence><show></show><status>online</status><priority>10</priority></presence>');
+    $obj->write_to_stream($stream[0],'<presence><show></show><status>online</status><priority>10</priority></presence>');
     $i=0;
   }
   $i++;
