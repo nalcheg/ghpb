@@ -1,0 +1,4 @@
+<?php
+$login=''; // before @gmail.com
+$password='';
+$jid=''; // xxxxxxxxxxxxxxxxxxxxxxxxxx@public.talk.google.com like jid for send message after connection
